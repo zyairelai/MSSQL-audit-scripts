@@ -3,7 +3,7 @@
 Scripts that can be used when auditing a MSSQL Server.
 This script has currently been tested on MSSQL 2012 and MSSQL 2016.
 
-[+] Tested on MSSQL 2017 and it works
+[+] Tested on MSSQL 2017 and it works perfectly  
 [+] Expected output: A .html file on the same directory
 
 ### Pre-Requisite

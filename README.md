@@ -22,13 +22,13 @@ Registered Owner:          Windows User
 ......
 ```
 
-From here we will obtain the name *RALPH* which is the servername, do not that IP address 127.0.0.1 does not work here
+From here we will obtain the hostname **RALPH** which is the servername, do not that IP address 127.0.0.1 does not work here
 
 ### Command that Works: Running on Powershell (Not CMD)
 1. The default will use the following command, it requires **NT/Authority System** privilege (Highest/root privilege) to run the script
 - Run this on CMD to bypass the system execution policy so we can run the script peacefully
 ```
-powershell -ep bypas
+powershell -ep bypass
 ```
 - Then run the script on the PowerShell prompt
 ```

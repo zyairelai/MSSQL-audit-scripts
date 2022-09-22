@@ -22,11 +22,11 @@ Registered Owner:          Windows User
 ......
 ```
 
-From here we will obtain the hostname **RALPH** which is the servername, do not that IP address 127.0.0.1 does not work here
+From here we will obtain the hostname **RALPH** which is the servername, do note that IP address 127.0.0.1 does not work for the parameter here
 
 ### Command that Works: Running on Powershell (Not CMD)
-1. The default will use the following command, it requires **NT/Authority System** privilege (Highest/root privilege) to run the script
-- Run this on CMD to bypass the system execution policy so we can run the script peacefully
+1. The default will use the following command, it requires **NT/Authority System** privilege (Administrator Privilege) to run the script
+- Run this on CMD as Administrator to bypass the system execution policy so we can run the script peacefully
 ```
 powershell -ep bypass
 ```
@@ -34,12 +34,12 @@ powershell -ep bypass
 ```
 PS C:\Users\Administrator\Desktop> .\MSSQL_Audit_Script.ps1 -Server "Servername" -WindowsAuthentication
 ```
-- In this case we will replace the "Servername" to **RALPH** for the example above
+- In the case above we will replace the "Servername" to **RALPH** for the example above
 ```
 PS C:\Users\Administrator\Desktop> .\MSSQL_Audit_Script.ps1 -Server "RALPH" -WindowsAuthentication
 ```
 
-2. This will target specific database name, where the first command is basically doing everything and this will produce less result (cleaner)
+2. This will target specific database name, which will produce less result (cleaner than the previous execution)
 ```
 .\MSSQL_Audit_Script.ps1 -Server "Servername" -Database "DatabaseName" -WindowsAuthentication
 ```
